@@ -6,6 +6,12 @@ import Platform from "./pages/Platform";
 import Methodology from "./pages/Methodology";
 import DataSources from "./pages/DataSources";
 import Challenge from "./pages/Challenge";
+// New portal pages
+import Dashboard from "./pages/Dashboard";
+import Simulator from "./pages/Simulator";
+import Pipeline from "./pages/Pipeline";
+import Intake from "./pages/Intake";
+import Chat from "./pages/Chat";
 
 function App() {
   return (
@@ -18,6 +24,12 @@ function App() {
           <Route path="/data-sources" element={<DataSources />} />
           <Route path="/challenge" element={<Challenge />} />
         </Route>
+        {/* New portal routes */}
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/simulator" element={<Simulator />} />
+        <Route path="/pipeline" element={<Pipeline />} />
+        <Route path="/intake" element={<Intake />} />
+        <Route path="/chat" element={<Chat />} />
       </Routes>
       <FloatingAssistant />
     </>
