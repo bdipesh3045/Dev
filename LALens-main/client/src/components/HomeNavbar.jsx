@@ -4,9 +4,10 @@ import BrandLogo from "./BrandLogo";
 
 const links = [
   { to: "/platform", label: "Platform" },
-  { to: "/methodology", label: "Methodology" },
-  { to: "/data-sources", label: "Data Sources" },
-  { to: "/challenge", label: "Challenge" }
+  { to: "/dashboard", label: "Dashboard" },
+  { to: "/simulator", label: "Simulator" },
+  { to: "/pipeline", label: "Pipeline" },
+  { to: "/chat", label: "AI Chat" }
 ];
 
 function HomeNavbar() {
@@ -29,8 +30,8 @@ function HomeNavbar() {
             </NavLink>
           ))}
         </nav>
-        <Link to="/platform" className="home-cta">
-          Explore the Map
+        <Link to="/dashboard" className="home-cta">
+          View Dashboard
           <ArrowRight size={16} strokeWidth={2} />
         </Link>
       </div>
